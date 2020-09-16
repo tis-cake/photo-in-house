@@ -1,0 +1,596 @@
+@font-face {
+  font-display: swap;
+  font-family: 'Golos';
+  src: local('Golos'), local('Golos-Regular'), url('../fonts/Golos/Golos-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Golos';
+  src: local('Golos-Medium'), url('../fonts/Golos/Golos-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Golos';
+  src: local('Golos-DemiBold'), url('../fonts/Golos/Golos-DemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Golos';
+  src: local('Golos-Bold'), url('../fonts/Golos/Golos-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Golos';
+  src: local('Golos-Black'), url('../fonts/Golos/Golos-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-display: swap;
+  font-family: 'SONGER Grotesque';
+  src: local('SONGER Grotesque'), local('SONGER-Grotesque-Regular'), url('../fonts/SONGER/Grotesque/SONGER-G-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-display: swap;
+  font-family: 'SONGER Grotesque';
+  src: local('SONGER-Grotesque-Medium'), url('../fonts/SONGER/Grotesque/SONGER-G-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-display: swap;
+  font-family: 'SONGER Grotesque';
+  src: local('SONGER-Grotesque-Bold'), url('../fonts/SONGER/Grotesque/SONGER-G-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-display: swap;
+  font-family: 'SONGER Grotesque';
+  src: local('SONGER-Grotesque-ExtraBold'), url('../fonts/SONGER/Grotesque/SONGER-G-ExtraBold.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-display: swap;
+  font-family: 'SONGER Grotesque';
+  src: local('SONGER-Grotesque-Black'), url('../fonts/SONGER/Grotesque/SONGER-G-Black.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-display: swap;
+  font-family: 'SONGER SemiExpanded';
+  src: local('SONGER SemiExpanded'), local('SONGER-SemiExpanded-Regular'), url('../fonts/SONGER/SemiExpanded/SONGER-SE-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-display: swap;
+  font-family: 'SONGER SemiExpanded';
+  src: local('SONGER-SemiExpanded-Medium'), url('../fonts/SONGER/Grotesque/SONGER-SE-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-display: swap;
+  font-family: 'SONGER SemiExpanded';
+  src: local('SONGER-SemiExpanded-Bold'), url('../fonts/SONGER/SemiExpanded/SONGER-SE-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-display: swap;
+  font-family: 'SONGER SemiExpanded';
+  src: local('SONGER-SemiExpanded-ExtraBold'), url('../fonts/SONGER/SemiExpanded/SONGER-SE-ExtraBold.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-display: swap;
+  font-family: 'SONGER SemiExpanded';
+  src: local('SONGER-SemiExpanded-Black'), url('../fonts/SONGER/SemiExpanded/SONGER-SE-Black.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Golos', 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  background-color: #fff;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+  padding: 0;
+}
+input,
+button,
+textarea {
+  box-sizing: border-box;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: 'Golos', 'Arial', sans-serif;
+  font-size: inherit;
+}
+fieldset {
+  padding: 0;
+  border: 0;
+}
+blockquote,
+figure,
+fieldset,
+dl,
+dd {
+  margin: 0;
+}
+.noscroll {
+  overflow: hidden !important;
+  height: 100% !important;
+}
+.overlay {
+  display: none;
+  z-index: 99;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.overlay.active {
+  display: block;
+}
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.container {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.container {
+  max-width: 1224px;
+  width: 100%;
+}
+html .mobile-flex,
+html .mobile-block {
+  display: none;
+}
+html .desktop-block {
+  display: block;
+}
+html .desktop-flex {
+  display: flex;
+}
+.js-phone-mask:-moz-ui-invalid {
+  box-shadow: none;
+}
+@media (max-width: 48em) {
+  html {
+    --padding-inline: 25px;
+  }
+  .container {
+    width: auto;
+    padding-left: var(--padding-inline);
+    padding-right: var(--padding-inline);
+  }
+  html .desktop-flex,
+  html .desktop-block {
+    display: none;
+  }
+  html .mobile-block {
+    display: block;
+  }
+  html .mobile-flex {
+    display: flex;
+  }
+}
+@media (max-width: 113em) {
+  html {
+    font-size: 54%;
+  }
+}
+@media (max-width: 108em) {
+  html {
+    font-size: 52%;
+  }
+}
+@media (max-width: 105em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (max-width: 96em) {
+  html {
+    font-size: 48%;
+  }
+}
+@media (max-width: 90em) {
+  html {
+    font-size: 46.875%;
+  }
+}
+@media (max-width: 80em) {
+  html {
+    font-size: 41.667%;
+  }
+}
+@media (max-width: 69em) {
+  html {
+    font-size: 33.333%;
+  }
+}
+@media (max-width: 48em) {
+  html {
+    font-size: 62.5%;
+  }
+}
+@media (max-width: 23em) {
+  html {
+    font-size: 60%;
+  }
+}
+@media (max-width: 22em) {
+  html {
+    font-size: 58%;
+  }
+}
+@media (max-width: 21em) {
+  html {
+    font-size: 53%;
+  }
+}
+.o {
+  outline: 1px solid red;
+}
+.r {
+  border: 1px solid red;
+}
+.shadow-outer {
+  background-color: #fff;
+  box-shadow: 0px 0px 3px rgba(115, 76, 191, 0.1), 0px 3px 6px rgba(115, 76, 191, 0.1), 0px 1px 0px rgba(115, 76, 191, 0.15);
+}
+.shadow-inner {
+  background-color: #fff;
+  box-shadow: inset 2px 2px 2px rgba(131, 86, 191, 0.1);
+}
+.no-select {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Chrome/Safari/Opera */
+  /* Konqueror */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+}
+.reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.img-cover {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.img-contain {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.h1,
+.h2,
+.h3,
+.h4 {
+  font-family: 'SONGER Grotesque', 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+.h1 {
+  font-size: 44px;
+  line-height: 48px;
+  letter-spacing: 0.02em;
+  font-feature-settings: 'ss01' on, 'zero' on;
+}
+.h2 {
+  font-size: 36px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  font-feature-settings: 'ss01' on, 'zero' on;
+}
+.h3 {
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-feature-settings: 'ss01' on;
+}
+.h4 {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-feature-settings: 'ss01' on;
+}
+.p-L,
+.p-M,
+.p-S,
+.p-m {
+  font-family: 'Golos', 'Arial', sans-serif;
+  font-style: normal;
+}
+.p-L {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+}
+.p-M {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+.p-S {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  font-feature-settings: 'ss01' on;
+}
+.p-m {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: -0.005em;
+}
+.icon {
+  width: 24px;
+  height: 24px;
+}
+.icon--small {
+  width: 20px;
+  height: 20px;
+}
+.icon-circle {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0px 0px 3px rgba(115, 76, 191, 0.1), 0px 3px 6px rgba(115, 76, 191, 0.1), 0px 1px 0px rgba(115, 76, 191, 0.15);
+}
+.icon-circle--small {
+  width: 40px;
+  height: 40px;
+}
+.btn-big-contacts {
+  display: flex;
+  align-items: center;
+  color: #2D264D;
+}
+.btn-big-contacts__icon-circle {
+  margin-right: 20px;
+}
+.btn-big-contacts__link {
+  font-family: 'SONGER SemiExpanded', 'Arial', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  font-feature-settings: 'ss01';
+}
+.btn-big-contacts__desc {
+  font-weight: 500;
+}
+.btn-region {
+  position: relative;
+  background-image: linear-gradient(120.87deg, #BD5A8F -18.64%, #5B23B5 120.48%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #734CBF;
+}
+.btn-region::before {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background-image: linear-gradient(120.87deg, #BD5A8F -18.64%, #5B23B5 120.48%);
+}
+.btn-callback {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  width: 272px;
+  height: 48px;
+  padding: 4px;
+  color: #fff;
+  background-image: linear-gradient(121.65deg, #75C370 0%, #449F3F 103.29%);
+  border-radius: 100px;
+}
+.btn-callback__icon-circle {
+  margin-right: 8px;
+}
+.btn-callback__desc {
+  font-family: 'Golos', 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: -0.005em;
+}
+/*header*/
+.header {
+  font-family: 'Golos', 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  font-feature-settings: 'ss01' on;
+  box-shadow: 0px 0px 3px rgba(115, 76, 191, 0.1), 0px 3px 6px rgba(115, 76, 191, 0.1), 0px 1px 0px rgba(115, 76, 191, 0.15);
+}
+.header__top {
+  background-color: #F5F5FF;
+  border-bottom: 1px solid #E9E9FF;
+}
+.header__main-nav {
+  padding-top: 13px;
+  padding-bottom: 5px;
+}
+.header__middle {
+  display: flex;
+  align-items: center;
+  padding-top: 25px;
+  padding-bottom: 26px;
+}
+.header__logo {
+  margin-right: 110px;
+}
+.header__btn-big-contacts-wrap {
+  display: flex;
+  justify-content: space-between;
+  width: 528px;
+}
+.header__btn-callback {
+  margin-left: auto;
+}
+.header__bottom {
+  padding-top: 18px;
+  padding-bottom: 14px;
+  border-top: 1px solid #E4E1F5;
+}
+.header__feature-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #626080;
+}
+.header__feature-item {
+  position: relative;
+  display: inline-flex;
+}
+.header__feature-item::after {
+  position: absolute;
+  content: '';
+  top: 50%;
+  right: -31px;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 4px;
+  background-color: #DFDBF3;
+  border-radius: 50%;
+}
+.header__feature-item:last-child::after {
+  content: none;
+}
+.header__feature-icon {
+  margin-right: 16px;
+}
+.logo__img-wrap {
+  width: 260px;
+  height: 52px;
+}
+.logo__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  color: #2D264D;
+  font-weight: 500;
+}
+.main-nav__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.main-nav__list-site {
+  max-width: 726px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(7, auto);
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  row-gap: 10px;
+}
+.main-nav__list-user {
+  justify-content: space-between;
+  width: 372px;
+}
+.main-nav__link {
+  display: inline-flex;
+}
+.main-nav__icon {
+  margin-right: 8px;
+}
+/*main*/
+/*swiper*/
+/*footer*/
+
+/*# sourceMappingURL=style.css.map */

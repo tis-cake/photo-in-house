@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="«Фото в дом»">
+    <title>Фото в дом</title>
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="./fav.ico">-->
+    <link rel="preload" href="fonts/Golos/Golos-Regular.ttf" as="font" type="font/ttf" crossorigin="">
+    <link rel="stylesheet" href="css/normalise.css">
+    <link rel="stylesheet" href="css/libs/swiper.min.css">
+    <link rel="stylesheet" href="css/libs/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+
+    <header class="header">
+      <div class="header__top">
+        <nav class="header__main-nav main-nav container">
+          <ul class="main-nav__list main-nav__list-site">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="payment-delivery.html">
+                Оплата и доставка
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="faq.html">
+                Вопросы-ответы
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="collaboration.html">
+                Сотрудничество
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="about.html">
+                О компании
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="articles.html">
+                Статьи
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="reviews.html">
+                Отзывы
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="contacts.html">
+                Контакты
+              </a>
+            </li>
+          </ul>
+          <ul class="main-nav__list main-nav__list-user">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="favourites.html">
+                <svg class="main-nav__icon icon icon--small" width="20" height="20" aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#header-01"></use>
+                </svg>
+                Избранное
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="account.html">
+                <svg class="main-nav__icon icon icon--small" width="20" height="20" aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#header-02"></use>
+                </svg>
+                Личный кабинет
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="basket.html">
+                <svg class="main-nav__icon icon" width="20" height="20" aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#header-03"></use>
+                </svg>
+                Корзина
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__middle container">
+        <figure class="header__logo logo">
+          <a class="logo__img-wrap" href="index.html">
+            <img class="logo__img" src="img/logo/logo.svg" alt="Логотип сайта «Фото в дом»" width="260" height="52">
+          </a>
+        </figure>
+
+        <ul class="header__btn-big-contacts-wrap">
+          <li class="header__btn-big-contacts btn-big-contacts">
+            <span class="btn-big-contacts__icon-circle icon-circle">
+              <svg class="btn-big-contacts__icon icon" width="24" height="24" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#header-04"></use>
+              </svg>
+            </span>
+            <p class="btn-big-contacts__text-wrap">
+              <a class="btn-big-contacts__link" href="tel:+78007071642">
+                8 (800) 707-16-42
+              </a>
+              <span class="btn-big-contacts__desc">
+                Бесплатно по России
+              </span>
+            </p>
+          </li>
+
+          <li class="header__btn-big-contacts btn-big-contacts">
+            <span class="btn-big-contacts__icon-circle icon-circle">
+              <svg class="btn-big-contacts__icon icon" width="24" height="24" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#header-05"></use>
+              </svg>
+            </span>
+            <p class="btn-big-contacts__text-wrap">
+              <a class="btn-big-contacts__link" href="tel:+74950031642">
+                8 (495) 003-16-42
+              </a>
+              <span class="btn-big-contacts__desc">
+                Москва
+                <button class="btn-region js-modal-region">
+                  Сменить регион
+                </button>
+              </span>
+            </p>
+          </li>
+        </ul>
+
+        <button class="header__btn-callback btn-callback">
+          <span class="btn-callback__icon-circle icon-circle icon-circle--small">
+            <svg class="btn-callback__icon icon" width="24" height="24" aria-hidden="true">
+              <use xlink:href="img/sprite.svg#header-06"></use>
+            </svg>
+          </span>
+          <span class="btn-callback__desc">
+            Заказать обратный звонок
+          </span>
+        </button>
+      </div>
+      <div class="header__bottom">
+        <ul class="header__feature-list container">
+          <li class="header__feature-item">
+            <svg class="header__feature-icon icon" width="24" height="24" aria-hidden="true">
+              <use xlink:href="img/sprite.svg#header-07"></use>
+            </svg>
+            <p class="header__feature-desc">
+              Оплата после получения
+            </p>
+          </li>
+          <li class="header__feature-item">
+            <svg class="header__feature-icon icon" width="24" height="24" aria-hidden="true">
+              <use xlink:href="img/sprite.svg#header-08"></use>
+            </svg>
+            <p class="header__feature-desc">
+              Изготовление за 1 день
+            </p>
+          </li>
+          <li class="header__feature-item">
+            <svg class="header__feature-icon icon" width="24" height="24" aria-hidden="true">
+              <use xlink:href="img/sprite.svg#header-09"></use>
+            </svg>
+            <p class="header__feature-desc">
+              Латексная печать
+            </p>
+          </li>
+          <li class="header__feature-item">
+            <svg class="header__feature-icon icon" width="24" height="24" aria-hidden="true">
+              <use xlink:href="img/sprite.svg#header-10"></use>
+            </svg>
+            <p class="header__feature-desc">
+              Стоимость — от 190 ₽ за м<sup>2</sup>
+            </p>
+          </li>
+          <li class="header__feature-item">
+            <svg class="header__feature-icon icon" width="24" height="24" aria-hidden="true">
+              <use xlink:href="img/sprite.svg#header-11"></use>
+            </svg>
+            <p class="header__feature-desc">
+              Гарантия низкой цены
+            </p>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="overlay"></div>
+
+    <script src="js/libs/jquery-3.4.1.min.js"></script>
+    <script src="js/libs/jquery.maskedinput.min.js"></script>
+    <script src="js/libs/jquery.fancybox.min.js"></script>
+
+    <script src="js/libs/swiper.min.js"></script>
+
+    <script src="js/main.js"></script>
+    <!-- <script src="js/slider.js"></script> -->
+  </body>
+
+</html>

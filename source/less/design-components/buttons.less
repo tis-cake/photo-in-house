@@ -1,0 +1,60 @@
+.btn-big-contacts {
+  display: flex;
+  align-items: center;
+  color: @text-primary;
+  &__icon-circle {
+    margin-right: 20px;
+  }
+  &__icon {}
+  &__text-wrap {}
+  &__link {
+    font-family: @songer-se;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    font-feature-settings: 'ss01'
+  }
+  &__desc {
+    font-weight: 500;
+  }
+}
+
+.btn-region {
+  position: relative;
+  .gradient-color(@g-violet, @violet);
+  &::before {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background-image: @g-violet;
+  }
+}
+
+.btn-callback {
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  width: 272px;
+  height: 48px;
+  padding: 4px;
+
+  color: #fff;
+  background-image: @g-green;
+  border-radius: 100px;
+
+  &__icon-circle {
+    margin-right: 8px;
+  }
+  &__icon {}
+
+  &__desc {
+    .p-m;
+  }
+}
