@@ -1,0 +1,29 @@
+.suggestions {
+  width: 953px;
+  .gradient-color(@g-violet, @violet);
+}
+
+.suggestions__list {
+  display: none;
+
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+
+  &.active {
+    display: flex;
+  }
+}
+
+.suggestions__item {
+  box-sizing: border-box;
+  .shadow-outer;
+  background-color: transparent;
+  // width: 107px;
+  width: auto;
+  border-radius: 100px;
+}
+
+.suggestions__link {
+  padding: 8px 24px;
+}
