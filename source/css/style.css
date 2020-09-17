@@ -346,6 +346,7 @@ html .desktop-flex {
   font-family: 'SONGER Grotesque', 'Arial', sans-serif;
   font-style: normal;
   font-weight: 700;
+  color: #2D264D;
 }
 .h1 {
   font-size: 44px;
@@ -513,6 +514,7 @@ html .desktop-flex {
   font-family: 'SONGER Grotesque', 'Arial', sans-serif;
   font-style: normal;
   font-weight: 700;
+  color: #2D264D;
   font-size: 36px;
   line-height: 40px;
   letter-spacing: 0.02em;
@@ -545,6 +547,7 @@ html .desktop-flex {
   font-family: 'SONGER Grotesque', 'Arial', sans-serif;
   font-style: normal;
   font-weight: 700;
+  color: #2D264D;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.1em;
@@ -930,6 +933,7 @@ html .desktop-flex {
 }
 .about__subtitle {
   margin-bottom: 37px;
+  color: #2D264D;
 }
 .about__content-wrap {
   display: grid;
@@ -938,6 +942,7 @@ html .desktop-flex {
 }
 .about__text-wrap p {
   margin-bottom: 24px;
+  color: #626080;
 }
 .about__text-wrap p:last-child {
   margin-bottom: 0;
@@ -1059,5 +1064,79 @@ html .desktop-flex {
   height: 100%;
 }
 /*footer*/
+.footer {
+  margin-top: 160px;
+  padding-top: 27px;
+  padding-bottom: 16px;
+  color: #2D264D;
+  background-color: #F5F5FF;
+  box-shadow: 0px 0px 3px rgba(115, 76, 191, 0.1), 0px 3px 6px rgba(115, 76, 191, 0.1), 0px 1px 0px rgba(115, 76, 191, 0.15);
+}
+.footer__columns-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__top {
+  margin-bottom: 22px;
+}
+.footer__top .footer__columns-right {
+  margin-top: 8px;
+}
+.footer__bottom {
+  margin-top: 16px;
+}
+.footer__bottom .footer__link {
+  opacity: 0.4;
+}
+.footer__logo {
+  margin-bottom: 42px;
+}
+.footer__columns-right {
+  display: flex;
+  font-weight: 400;
+}
+.footer__list {
+  width: 290px;
+  margin-left: 19px;
+}
+.footer__list:first-child {
+  margin-left: 0;
+}
+.footer__item {
+  margin-bottom: 6px;
+}
+.footer__item:last-child {
+  margin-bottom: 0;
+}
+.footer__link {
+  transition: 0.5s;
+  opacity: 0.8;
+}
+.footer__link:hover,
+.footer__link:focus {
+  opacity: 1;
+}
+.footer__decor-line {
+  opacity: 0.07;
+  border-bottom: 1px solid #2D264D;
+}
+.social-links__list {
+  display: flex;
+}
+.social-links__item {
+  margin-right: 26px;
+}
+.social-links__item:last-child {
+  margin-right: 0;
+}
+.social-links__link {
+  padding: 4px;
+  opacity: 0.8;
+  transition: 0.5s;
+}
+.social-links__link:hover,
+.social-links__link:focus {
+  opacity: 1;
+}
 
 /*# sourceMappingURL=style.css.map */
