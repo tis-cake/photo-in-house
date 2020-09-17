@@ -58,7 +58,7 @@
   }
 }
 
-.inner-link {
+.link-inner {
   box-sizing: border-box;
   position: relative;
 
@@ -99,5 +99,19 @@
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(21, 13, 64, 0.35) 100%), linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 100%);
     mix-blend-mode: multiply;
     opacity: 0.75;
+  }
+}
+
+.link-gradient {
+  display: inline-flex;
+  align-items: baseline;
+  &__desc {
+    display: inline;
+    .h4;
+    .gradient-color(@g-violet, @violet);
+    letter-spacing: 0.05em;
+  }
+  &__icon {
+    margin-left: 6px;
   }
 }

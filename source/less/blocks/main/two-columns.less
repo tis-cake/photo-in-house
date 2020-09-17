@@ -8,4 +8,17 @@
 
 .two-columns__aside-column {}
 
-.two-columns__content-column {}
+.two-columns__content-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.two-columns__block {
+  margin-bottom: 60px;
+  &--decor {
+    border-bottom: 1px solid #DFDBF3;
+  }
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}

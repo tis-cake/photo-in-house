@@ -1,0 +1,29 @@
+.inner-links {
+}
+
+.inner-links__list {
+  display: grid;
+  grid-template-columns: repeat(2, 444px);
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.inner-links__item {
+  height: 240px;
+}
+
+.inner-links__link {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.inner-links__img {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  border-radius: 6px;
+  .img-cover;
+}
