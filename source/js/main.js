@@ -50,7 +50,7 @@ $(document).ready(function() {
     list.addClass('active');
 
     // рисуем белую линию под актиным табом
-    // hideLine(tab);
+    hideLine(tab);
   })
 
   function hideLine(tab) {
