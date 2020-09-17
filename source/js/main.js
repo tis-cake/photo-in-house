@@ -25,13 +25,26 @@ $(document).ready(function() {
     tab.addClass('active');
     list.addClass('active');
 
-    let decorImgNum = parseInt(id.match(/\d+/));
+    let num = parseInt(id.match(/\d+/));
 
     $('.tab-toggle__decor-img').removeClass('active');
-    $('.tab-toggle__decor-img--'+decorImgNum).addClass('active');
+    $('.tab-toggle__decor-img--' + num).addClass('active');
 
     $(this).blur();
   })
+});
+
+// прячем иконку в поле поиска
+$(document).ready(function() {
+  $('.search__input--shutterstock').on('keyup', function(evt) {
+    let icon = $(this).closest('.search__form').find('.search__icon-shutterstock');
+    icon.addClass('hide');
+
+    // показываем если поле пустое
+    if ($(this).val().length === 0) {
+      icon.removeClass('hide');
+    }
+  });
 });
 
 // // мобильное подменю

@@ -193,6 +193,7 @@
           <img class="tab-toggle__decor-img tab-toggle__decor-img--4" src="img/figure/tab-toggle-4.svg" alt="Декоративное изображение" aria-hidden="true">
           <img class="tab-toggle__decor-img tab-toggle__decor-img--5" src="img/figure/tab-toggle-5.svg" alt="Декоративное изображение" aria-hidden="true">
         </div>
+
         <ul class="tab-toggle__list container">
           <li class="tab-toggle__item active">
             <a class="tab-toggle__btn" href="#tab1">
@@ -389,6 +390,594 @@
           </ul>
         </div>
       </section>
+
+      <section class="search p-m container">
+        <div class="search__two-columns-wrap">
+          <form class="search__form" action=".php" method="POST">
+            <label class="search__label">
+              <input class="search__input" type="search" name="SEARCH-CATALOG" placeholder="Поиск по каталогу фотообоев" required="">
+              <svg class="search__icon icon" width="24" height="24" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#form-01"></use>
+              </svg>
+            </label>
+          </form>
+          <form class="search__form" action=".php" method="POST">
+            <label class="search__label">
+              <input class="search__input search__input--shutterstock" type="search" name="SEARCH-SHUTTERSTOCK" required="" placeholder="Поиск по фотобанку">
+              <svg class="search__icon icon" width="24" height="24" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#form-01"></use>
+              </svg>
+              <img class="search__icon-shutterstock icon-shutterstock" src="img/logo/logo-shutterstock.png" alt="Логотип Shutterstock" width="85" height="18">
+              <!-- <img class="search__icon-shutterstock icon-shutterstock" src="img/logo/logo-shutterstock2.png" alt="Логотип Shutterstock" width="241" height="18"> -->
+            </label>
+          </form>
+        </div>
+      </section>
+
+      <div class="two-columns container">
+        <aside class="two-columns__aside-column categories">
+          <ul class="categories__list-block">
+            <li class="categories__item-block">
+              <p class="categories__item-title h4">
+                По категориям
+              </p>
+              <ul class="categories__list p-m">
+                <li class="categories__item">
+                  <a class="categories__link" href="#">
+                    <img class="categories__icon icon" src="img/icons/categories/categories-01.svg" width="24" height="24" aria-hidden="true" alt="ТОП 100">
+                    <p class="categories__desc">
+                      ТОП 100
+                    </p>
+                    <svg class="categories__icon-go icon" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#arrow-01"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="categories__item">
+                  <a class="categories__link" href="#">
+                    <img class="categories__icon icon" src="img/icons/categories/categories-02.svg" width="24" height="24" aria-hidden="true" alt="Новинки">
+                    <p class="categories__desc">
+                      Новинки
+                    </p>
+                    <svg class="categories__icon-go icon" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#arrow-01"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="categories__item">
+                  <a class="categories__link" href="#">
+                    <img class="categories__icon icon" src="img/icons/categories/categories-03.svg" width="24" height="24" aria-hidden="true" alt="3D фото">
+                    <p class="categories__desc">
+                      3D фото
+                    </p>
+                    <svg class="categories__icon-go icon" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#arrow-01"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="categories__item">
+                  <a class="categories__link" href="#">
+                    <img class="categories__icon icon" src="img/icons/categories/categories-04.svg" width="24" height="24" aria-hidden="true" alt="Дизайнерские">
+                    <p class="categories__desc">
+                      Дизайнерские
+                    </p>
+                    <svg class="categories__icon-go icon" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#arrow-01"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="categories__item">
+                  <a class="categories__link" href="#">
+                    <img class="categories__icon icon" src="img/icons/categories/categories-05.svg" width="24" height="24" aria-hidden="true" alt="Карты">
+                    <p class="categories__desc">
+                      Карты
+                    </p>
+                    <svg class="categories__icon-go icon" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#arrow-01"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="categories__item">
+                  <a class="categories__link" href="#">
+                    <img class="categories__icon icon" src="img/icons/categories/categories-06.svg" width="24" height="24" aria-hidden="true" alt="Архитектура">
+                    <p class="categories__desc">
+                      Архитектура
+                    </p>
+                    <svg class="categories__icon-go icon" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#arrow-01"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="categories__item">
+                  <a class="categories__link" href="#">
+                    <img class="categories__icon icon" src="img/icons/categories/categories-07.svg" width="24" height="24" aria-hidden="true" alt="Города">
+                    <p class="categories__desc">
+                      Города
+                    </p>
+                    <svg class="categories__icon-go icon" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#arrow-01"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="categories__item">
+                  <a class="categories__link" href="#">
+                    <img class="categories__icon icon" src="img/icons/categories/categories-08.svg" width="24" height="24" aria-hidden="true" alt="Страны мира">
+                    <p class="categories__desc">
+                      Страны мира
+                    </p>
+                    <svg class="categories__icon-go icon" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#arrow-01"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="categories__item">
+                  <a class="categories__link" href="#">
+                    <img class="categories__icon icon" src="img/icons/categories/categories-09.svg" width="24" height="24" aria-hidden="true" alt="Природа">
+                    <p class="categories__desc">
+                      Природа
+                    </p>
+                    <svg class="categories__icon-go icon" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#arrow-01"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="categories__item">
+                  <a class="categories__link" href="#">
+                    <img class="categories__icon icon" src="img/icons/categories/categories-10.svg" width="24" height="24" aria-hidden="true" alt="Моря и озера">
+                    <p class="categories__desc">
+                      Моря и озера
+                    </p>
+                    <svg class="categories__icon-go icon" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#arrow-01"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="categories__item">
+                  <a class="categories__link" href="#">
+                    <img class="categories__icon icon" src="img/icons/categories/categories-11.svg" width="24" height="24" aria-hidden="true" alt="Реки и водопады">
+                    <p class="categories__desc">
+                      Реки и водопады
+                    </p>
+                    <svg class="categories__icon-go icon" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#arrow-01"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="categories__item">
+                  <a class="categories__link" href="#">
+                    <img class="categories__icon icon" src="img/icons/categories/categories-12.svg" width="24" height="24" aria-hidden="true" alt="Цветы и растения">
+                    <p class="categories__desc">
+                      Цветы и растения
+                    </p>
+                    <svg class="categories__icon-go icon" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#arrow-01"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="categories__item">
+                  <a class="categories__link" href="#">
+                    <img class="categories__icon icon" src="img/icons/categories/categories-13.svg" width="24" height="24" aria-hidden="true" alt="Закаты и рассветы">
+                    <p class="categories__desc">
+                      Закаты и рассветы
+                    </p>
+                    <svg class="categories__icon-go icon" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#arrow-01"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="categories__item">
+                  <a class="categories__link" href="#">
+                    <img class="categories__icon icon" src="img/icons/categories/categories-14.svg" width="24" height="24" aria-hidden="true" alt="Авто-мото">
+                    <p class="categories__desc">
+                      Авто-мото
+                    </p>
+                    <svg class="categories__icon-go icon" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#arrow-01"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="categories__item">
+                  <a class="categories__link" href="#">
+                    <img class="categories__icon icon" src="img/icons/categories/categories-15.svg" width="24" height="24" aria-hidden="true" alt="Дороги">
+                    <p class="categories__desc">
+                      Дороги
+                    </p>
+                    <svg class="categories__icon-go icon" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#arrow-01"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="categories__item">
+                  <a class="categories__link" href="#">
+                    <img class="categories__icon icon" src="img/icons/categories/categories-16.svg" width="24" height="24" aria-hidden="true" alt="Спорт">
+                    <p class="categories__desc">
+                      Спорт
+                    </p>
+                    <svg class="categories__icon-go icon" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#arrow-01"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="categories__item">
+                  <a class="categories__link" href="#">
+                    <img class="categories__icon icon" src="img/icons/categories/categories-17.svg" width="24" height="24" aria-hidden="true" alt="Животные">
+                    <p class="categories__desc">
+                      Животные
+                    </p>
+                    <svg class="categories__icon-go icon" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#arrow-01"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="categories__item">
+                  <a class="categories__link" href="#">
+                    <img class="categories__icon icon" src="img/icons/categories/categories-18.svg" width="24" height="24" aria-hidden="true" alt="Подводный мир">
+                    <p class="categories__desc">
+                      Подводный мир
+                    </p>
+                    <svg class="categories__icon-go icon" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#arrow-01"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="categories__item">
+                  <a class="categories__link" href="#">
+                    <img class="categories__icon icon" src="img/icons/categories/categories-19.svg" width="24" height="24" aria-hidden="true" alt="Игры и фильмы">
+                    <p class="categories__desc">
+                      Игры и фильмы
+                    </p>
+                    <svg class="categories__icon-go icon" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#arrow-01"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="categories__item">
+                  <a class="categories__link" href="#">
+                    <img class="categories__icon icon" src="img/icons/categories/categories-20.svg" width="24" height="24" aria-hidden="true" alt="Текстуры и фоны">
+                    <p class="categories__desc">
+                      Текстуры и фоны
+                    </p>
+                    <svg class="categories__icon-go icon" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#arrow-01"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="categories__item-block">
+              <p class="categories__item-title h4">
+                По помещениям
+              </p>
+              <ul class="categories__list p-m">
+                <li class="categories__item">
+                  <a class="categories__link" href="#">
+                    <img class="categories__icon icon" src="img/icons/places/places-01.svg" width="24" height="24" aria-hidden="true" alt="На кухню">
+                    <p class="categories__desc">
+                      На кухню
+                    </p>
+                    <svg class="categories__icon-go icon" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#arrow-01"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="categories__item">
+                  <a class="categories__link" href="#">
+                    <img class="categories__icon icon" src="img/icons/places/places-02.svg" width="24" height="24" aria-hidden="true" alt="В спальню">
+                    <p class="categories__desc">
+                      В спальню
+                    </p>
+                    <svg class="categories__icon-go icon" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#arrow-01"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="categories__item">
+                  <a class="categories__link" href="#">
+                    <img class="categories__icon icon" src="img/icons/places/places-03.svg" width="24" height="24" aria-hidden="true" alt="В детскую комнату">
+                    <p class="categories__desc">
+                      В детскую комнату
+                    </p>
+                    <svg class="categories__icon-go icon" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#arrow-01"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="categories__item">
+                  <a class="categories__link" href="#">
+                    <img class="categories__icon icon" src="img/icons/places/places-04.svg" width="24" height="24" aria-hidden="true" alt="В гостиную">
+                    <p class="categories__desc">
+                      В гостиную
+                    </p>
+                    <svg class="categories__icon-go icon" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#arrow-01"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="categories__item">
+                  <a class="categories__link" href="#">
+                    <img class="categories__icon icon" src="img/icons/places/places-05.svg" width="24" height="24" aria-hidden="true" alt="В офис">
+                    <p class="categories__desc">
+                      В офис
+                    </p>
+                    <svg class="categories__icon-go icon" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#arrow-01"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="categories__item">
+                  <a class="categories__link" href="#">
+                    <img class="categories__icon icon" src="img/icons/places/places-06.svg" width="24" height="24" aria-hidden="true" alt="В прихожую">
+                    <p class="categories__desc">
+                      В прихожую
+                    </p>
+                    <svg class="categories__icon-go icon" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#arrow-01"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="categories__item">
+                  <a class="categories__link" href="#">
+                    <img class="categories__icon icon" src="img/icons/places/places-07.svg" width="24" height="24" aria-hidden="true" alt="В ванную">
+                    <p class="categories__desc">
+                      В ванную
+                    </p>
+                    <svg class="categories__icon-go icon" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#arrow-01"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="categories__item">
+                  <a class="categories__link" href="#">
+                    <img class="categories__icon icon" src="img/icons/places/places-08.svg" width="24" height="24" aria-hidden="true" alt="На потолок">
+                    <p class="categories__desc">
+                      На потолок
+                    </p>
+                    <svg class="categories__icon-go icon" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#arrow-01"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="categories__item">
+                  <a class="categories__link" href="#">
+                    <img class="categories__icon icon" src="img/icons/places/places-09.svg" width="24" height="24" aria-hidden="true" alt="3D полы">
+                    <p class="categories__desc">
+                      3D полы
+                    </p>
+                    <svg class="categories__icon-go icon" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#arrow-01"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="categories__item">
+                  <a class="categories__link" href="#">
+                    <img class="categories__icon icon" src="img/icons/places/places-10.svg" width="24" height="24" aria-hidden="true" alt="На дверь">
+                    <p class="categories__desc">
+                      На дверь
+                    </p>
+                    <svg class="categories__icon-go icon" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#arrow-01"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="categories__item">
+                  <a class="categories__link" href="#">
+                    <img class="categories__icon icon" src="img/icons/places/places-11.svg" width="24" height="24" aria-hidden="true" alt="На шкаф-купе">
+                    <p class="categories__desc">
+                      На шкаф-купе
+                    </p>
+                    <svg class="categories__icon-go icon" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#arrow-01"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="categories__item">
+                  <a class="categories__link" href="#">
+                    <img class="categories__icon icon" src="img/icons/places/places-12.svg" width="24" height="24" aria-hidden="true" alt="В кафе и столовую">
+                    <p class="categories__desc">
+                      В кафе и столовую
+                    </p>
+                    <svg class="categories__icon-go icon" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#arrow-01"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="categories__item">
+                  <a class="categories__link" href="#">
+                    <img class="categories__icon icon" src="img/icons/places/places-13.svg" width="24" height="24" aria-hidden="true" alt="В салон красоты">
+                    <p class="categories__desc">
+                      В салон красоты
+                    </p>
+                    <svg class="categories__icon-go icon" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#arrow-01"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="categories__item-block">
+              <p class="categories__item-title h4">
+                По цвету
+              </p>
+              <ul class="categories__list p-m">
+                <li class="categories__item">
+                  <a class="categories__link" href="#">
+                    <svg class="categories__icon icon" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#colors-01-white"></use>
+                    </svg>
+                    <p class="categories__desc">
+                      Белый
+                    </p>
+                    <svg class="categories__icon-go icon" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#arrow-01"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="categories__item">
+                  <a class="categories__link" href="#">
+                    <svg class="categories__icon icon" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#colors-02-black"></use>
+                    </svg>
+                    <p class="categories__desc">
+                      Чёрный
+                    </p>
+                    <svg class="categories__icon-go icon" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#arrow-01"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="categories__item">
+                  <a class="categories__link" href="#">
+                    <svg class="categories__icon icon" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#colors-03-red"></use>
+                    </svg>
+                    <p class="categories__desc">
+                      Красный
+                    </p>
+                    <svg class="categories__icon-go icon" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#arrow-01"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="categories__item">
+                  <a class="categories__link" href="#">
+                    <svg class="categories__icon icon" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#colors-04-orange"></use>
+                    </svg>
+                    <p class="categories__desc">
+                      Оранжевый
+                    </p>
+                    <svg class="categories__icon-go icon" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#arrow-01"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="categories__item">
+                  <a class="categories__link" href="#">
+                    <svg class="categories__icon icon" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#colors-05-yellow"></use>
+                    </svg>
+                    <p class="categories__desc">
+                      Жёлтый
+                    </p>
+                    <svg class="categories__icon-go icon" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#arrow-01"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="categories__item">
+                  <a class="categories__link" href="#">
+                    <svg class="categories__icon icon" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#colors-06-green"></use>
+                    </svg>
+                    <p class="categories__desc">
+                      Зелёный
+                    </p>
+                    <svg class="categories__icon-go icon" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#arrow-01"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="categories__item">
+                  <a class="categories__link" href="#">
+                    <svg class="categories__icon icon" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#colors-07-blue"></use>
+                    </svg>
+                    <p class="categories__desc">
+                      Голубой
+                    </p>
+                    <svg class="categories__icon-go icon" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#arrow-01"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="categories__item">
+                  <a class="categories__link" href="#">
+                    <svg class="categories__icon icon" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#colors-08-blue-dark"></use>
+                    </svg>
+                    <p class="categories__desc">
+                      Синий
+                    </p>
+                    <svg class="categories__icon-go icon" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#arrow-01"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="categories__item">
+                  <a class="categories__link" href="#">
+                    <svg class="categories__icon icon" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#colors-09-violet"></use>
+                    </svg>
+                    <p class="categories__desc">
+                      Фиолетовый
+                    </p>
+                    <svg class="categories__icon-go icon" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#arrow-01"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="categories__item">
+                  <a class="categories__link" href="#">
+                    <img class="categories__icon icon" src="img/icons/colors/colors-10-multi.png" width="24" height="24" aria-hidden="true" alt="Мультицвет">
+                    <p class="categories__desc">
+                      Мультицвет
+                    </p>
+                    <svg class="categories__icon-go icon" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#arrow-01"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </aside>
+
+        <div class="two-columns__content-column">
+
+        </div>
+      </div>
     </main>
 
     <div class="overlay"></div>
