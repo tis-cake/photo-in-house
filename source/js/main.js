@@ -25,18 +25,10 @@ $(document).ready(function() {
     tab.addClass('active');
     list.addClass('active');
 
-    let decorImgClass = 'tab-toggle__decor-img';
-    let decorImgEl = $('.'+decorImgClass);
-
     let decorImgNum = parseInt(id.match(/\d+/));
-    // let decorImgNum = +/\d+/.exec(id)
 
-    // let decorImgCustomClass = decorImgClass + ' ' + decorImgClass + '--' + decorImgNum;
-    // decorImgEl.removeClass();
-    // decorImgEl.addClass(decorImgCustomClass);
-
-    $('.tab-toggle__decor-image').removeClass('active');
-    $('.tab-toggle__decor-image--'+decorImgNum).addClass('active');
+    $('.tab-toggle__decor-img').removeClass('active');
+    $('.tab-toggle__decor-img--'+decorImgNum).addClass('active');
 
     $(this).blur();
   })
