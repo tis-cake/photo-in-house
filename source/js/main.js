@@ -9,36 +9,12 @@ const width = $(window).width();
 //   });
 // });
 
-// скользящая полоса в навигации
+// показываем выбранный таб, скрываем все остальные
 $(document).ready(function() {
-  // if (width >= 756) {
-    // let marker = $('.tab-toggle__decor-block-js');
-    // let item = $('.tab-toggle__item');
-
-    // let leftItem;
-    // let widthItem = item.width();
-    // let widthItemBefore = parseInt(item.css('--tab-toggle-before-width'));
-    // widthItemBefore = widthItemBefore - 5;
-
-
-    // item.each(function() {
-    //   $(this).on('click', () => {
-    //     // leftItem = $(this).position().left;
-    //     // leftItem = leftItem - (widthItemBefore - widthItem) / 2
-
-    //     // marker.css('left', leftItem);
-    //     // marker.css('width', widthItemBefore);
-    //   })
-    // });
-  // }
-
-  let marker = $('.tab-toggle__decor-block-js');
-
 
   $('.tab-toggle__btn').on('click', function(evt) {
     evt.preventDefault();
 
-    // показываем выбранный таб, скрываем все остальные
     let tab = $(this).closest('.tab-toggle__item');
     let id = $(this).attr('href');
     let list = $(id);
@@ -49,26 +25,21 @@ $(document).ready(function() {
     tab.addClass('active');
     list.addClass('active');
 
-    // рисуем белую линию под актиным табом
-    hideLine(tab);
+    let decorImgClass = 'tab-toggle__decor-img';
+    let decorImgEl = $('.'+decorImgClass);
+
+    let decorImgNum = parseInt(id.match(/\d+/));
+    // let decorImgNum = +/\d+/.exec(id)
+
+    // let decorImgCustomClass = decorImgClass + ' ' + decorImgClass + '--' + decorImgNum;
+    // decorImgEl.removeClass();
+    // decorImgEl.addClass(decorImgCustomClass);
+
+    $('.tab-toggle__decor-image').removeClass('active');
+    $('.tab-toggle__decor-image--'+decorImgNum).addClass('active');
+
+    $(this).blur();
   })
-
-  function hideLine(tab) {
-    // точка left у выбранного таба
-    let tabPropertyLeft;
-    // ширина выбранного таба
-    let tabPropertyWidth = tab.width();
-    // css-переменная --tab-toggle-before-width отвечает за ширину у .tab-toggle__item::before
-    let tabBeforePropertyWidth = parseInt(tab.css('--tab-toggle-before-width'));
-
-    tabBeforePropertyWidth = tabBeforePropertyWidth - 5;
-
-    tabPropertyLeft = tab.position().left;
-    tabPropertyLeft = tabPropertyLeft - (tabBeforePropertyWidth - tabPropertyWidth) / 2
-
-    marker.css('left', tabPropertyLeft);
-    marker.css('width', tabBeforePropertyWidth);
-  }
 });
 
 // // мобильное подменю
